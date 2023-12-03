@@ -7,7 +7,7 @@ import re
 import typing
 
 
-QSO_RE = re.compile("^QSO:\s+(\d+)\s+(CW|PH|DG|RY)\s+(\d\d\d\d-\d\d-\d\d)\s+(\d+)\s+([A-Z0-9]+)\s+(\d+)\s+(\w+)\s+([A-Z0-9]+)\s+(\d+)\s+(\w+)\s*")
+QSO_RE = re.compile("^QSO:\s+(\d+)\s+(CW|PH|DG|RY)\s+(\d\d\d\d-\d\d-\d\d)\s+(\d+)\s+([A-Z0-9]+)\s+(\d+)\s+(\w+)\s+([A-Z0-9]+)\s+(\d+)\s+(\w+)\s*\d?")
 
 Mode = enum.Enum("Mode", "CW PH DG".split())
 
