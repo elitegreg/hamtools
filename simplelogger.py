@@ -1,9 +1,10 @@
 import argparse
 import datetime
+import os.path
 
 from contextlib import closing
 
-from hamutils.adif.adi import ADIWriter
+from hamutils.adif.adi import ADIReader, ADIWriter
 
 
 DEFAULT_DATE = datetime.datetime.utcnow().date()
@@ -39,8 +40,8 @@ class LogRecord:
         while True:
             retry(self.prompt_band)
             retry(self.prompt_mode)
-            retry(self.prompt_datetime)
             retry(self.prompt_call)
+            retry(self.prompt_datetime)
             retry(self.prompt_rst)
             retry(self.prompt_exchange)
             if self.prompt_confirm() == "y":
@@ -66,8 +67,12 @@ class LogRecord:
 
     def prompt_datetime(self):
         global DEFAULT_DATE
-        dt = input(f"DATETIME ([{DEFAULT_DATE.strftime('%Y%m%d')} ]HHMM): ")
-        if len(dt) <= 4:
+        current_time = datetime.datetime.now().time()
+        dt = input(f"DATETIME ([{DEFAULT_DATE.strftime('%Y%m%d')} ][{current_time.strftime('%H%M')}]): ")
+        if len(dt) == 0:
+            tm = current_time
+            dt = datetime.datetime.combine(DEFAULT_DATE, tm)
+        elif len(dt) <= 4:
             tm = datetime.datetime.strptime(dt, "%H%M").time()
             dt = datetime.datetime.combine(DEFAULT_DATE, tm)
         else:
@@ -121,9 +126,18 @@ if __name__ == "__main__":
     parser.add_argument("-o", "--output", required=True)
     args = parser.parse_args()
 
+    oldqsos = []
+
+    if os.path.exists(args.output):
+        with open(args.output, "r") as f:
+            adif = ADIReader(f)
+            oldqsos.extend((qso for qso in adif))
+
     with open(args.output, "wb") as f:
         with closing(ADIWriter(f, "simplelogger.py", 0.1)) as adif:
             try:
+                for qso in oldqsos:
+                    adif.add_qso(**qso)
                 while True:
                     record = LogRecord(args.station_callsign, args.operator)
                     record.prompt_all()
