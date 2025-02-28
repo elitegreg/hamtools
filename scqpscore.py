@@ -7,7 +7,7 @@ import re
 import typing
 
 
-QSO_RE = re.compile("^QSO:\s+(\d+)\s+(CW|PH|DG|RY)\s+(\d\d\d\d-\d\d-\d\d)\s+(\d+)\s+([A-Z0-9]+)\s+(\d+)\s+(\w+)\s+([A-Z0-9]+)\s+(\d+)\s+(\w+)\s*\d?")
+QSO_RE = re.compile(r"^QSO:\s+(\d+)\s+(CW|PH|DG|RY)\s+(\d\d\d\d-\d\d-\d\d)\s+(\d+)\s+([A-Z0-9]+)\s+(\d+)\s+(\w+)\s+([A-Z0-9]+)\s+(\d+)\s+(\w+)\s*\d?")
 
 Mode = enum.Enum("Mode", "CW PH DG".split())
 
@@ -33,9 +33,9 @@ BANDS = {
     (50000, 54000): "6m",
 }
 
-BONUS_STATIONS = ["W4CAE", "WW4SF"]
-START_TIME = datetime.datetime(2023, 2, 25, 15)
-END_TIME = datetime.datetime(2023, 2, 26, 2)
+BONUS_STATIONS = ["W4CAE", "WW4SF", "K4YTZ"]
+START_TIME = datetime.datetime(2025, 2, 22, 15)
+END_TIME = datetime.datetime(2025, 2, 23, 2)
 
 
 class StatsKeeper:
@@ -89,7 +89,7 @@ class StatsKeeper:
 
     @property
     def multiplier(self):
-        return len(self._mults.drop_duplicates(["mode", "states", "provinces", "sc counties"]))
+        return len(self._mults.drop_duplicates(["band", "mode", "states", "provinces", "sc counties"]))
 
     @property
     def qso_count(self):
@@ -142,7 +142,7 @@ class Scorer:
             self._qso_points += 2
 
         if qso.callsign in BONUS_STATIONS:
-            self._bonuses.add((qso.callsign, qso.band, qso.mode, qso.srx))
+            self._bonuses.add((qso.callsign, qso.band, qso.mode))
 
     def dump(self):
         self._stats.process()
