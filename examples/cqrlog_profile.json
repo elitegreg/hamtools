@@ -1,0 +1,229 @@
+{
+    "1": {
+        "my_city": "Goose Creek",
+        "my_state": "SC",
+        "my_cnty": "SC,Berkeley",
+        "my_gridsquare": "EM93XA",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America"
+    },
+    "2": {
+        "my_city": "Goose Creek",
+        "my_state": "SC",
+        "my_cnty": "SC,Berkeley",
+        "my_gridsquare": "EM93XA",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America"
+    },
+    "3": {
+        "my_city": "Columbia",
+        "my_state": "SC",
+        "my_cnty": "SC,Richland",
+        "my_gridsquare": "EM94",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2913",
+        "my_sig_info": "US-2913"
+    },
+    "4": {
+        "my_city": "Kelly",
+        "my_state": "NC",
+        "my_cnty": "NC,Bladen",
+        "my_gridsquare": "FM04",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2752",
+        "my_sig_info": "US-2752"
+    },
+    "5": {
+        "my_city": "Elizabethtown",
+        "my_state": "NC",
+        "my_cnty": "NC,Bladen",
+        "my_gridsquare": "FM04",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2738",
+        "my_sig_info": "US-2738"
+    },
+    "6": {
+        "my_city": "Blackville",
+        "my_state": "SC",
+        "my_cnty": "SC,Barnwell",
+        "my_gridsquare": "EM93",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2885",
+        "my_sig_info": "US-2885"
+    },
+    "7": {
+        "my_city": "Pine Mountain",
+        "my_state": "GA",
+        "my_cnty": "GA,Harris",
+        "my_gridsquare": "EM72",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2173",
+        "my_sig_info": "US-2173"
+    },
+    "8": {
+        "my_city": "Elizabethtown",
+        "my_state": "NC",
+        "my_cnty": "NC,Bladen",
+        "my_gridsquare": "FM04",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-4860",
+        "my_sig_info": "US-4860"
+    },
+    "9": {
+        "my_city": "Elizabethtown",
+        "my_state": "NC",
+        "my_cnty": "NC,Bladen",
+        "my_gridsquare": "FM04",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-6882",
+        "my_sig_info": "US-6882"
+    },
+    "10": {
+        "my_city": "Bishopville",
+        "my_state": "SC",
+        "my_cnty": "SC,Lee",
+        "my_gridsquare": "EM94",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2905",
+        "my_sig_info": "US-2905"
+    },
+    "11": {
+        "my_city": "Greenville",
+        "my_state": "SC",
+        "my_cnty": "SC,Greenville",
+        "my_gridsquare": "EM84",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2909",
+        "my_sig_info": "US-2909"
+    },
+    "12": {
+        "my_city": "Lancaster",
+        "my_state": "SC",
+        "my_cnty": "SC,Lancaster",
+        "my_gridsquare": "EM94",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2883",
+        "my_sig_info": "US-2883"
+    },
+    "13": {
+        "my_city": "Charleston",
+        "my_state": "SC",
+        "my_cnty": "SC,Charleston",
+        "my_gridsquare": "FM02",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-3872",
+        "my_sig_info": "US-3872"
+    },
+    "14": {
+        "my_city": "Kings Mountain",
+        "my_state": "NC",
+        "my_cnty": "NC,Gaston",
+        "my_gridsquare": "EM95",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2726",
+        "my_sig_info": "US-2726"
+    },
+    "15": {
+        "my_city": "Blacksburg",
+        "my_state": "SC",
+        "my_cnty": "SC,York",
+        "my_gridsquare": "EM95",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2726",
+        "my_sig_info": "US-2726"
+    },
+    "16": {
+        "my_city": "Blacksburg",
+        "my_state": "SC",
+        "my_cnty": "SC,York",
+        "my_gridsquare": "EM95",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-0720",
+        "my_sig_info": "US-0720"
+    },
+    "17": {
+        "my_city": "Chester",
+        "my_state": "SC",
+        "my_cnty": "SC,Chester",
+        "my_gridsquare": "EM94",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-2889",
+        "my_sig_info": "US-2889"
+    },
+    "18": {
+        "my_city": "St. Stephen",
+        "my_state": "SC",
+        "my_cnty": "SC,Berkeley",
+        "my_gridsquare": "FM03",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-4522",
+        "my_sig_info": "US-4522"
+    },
+    "19": {
+        "my_city": "Ninety Six",
+        "my_state": "SC",
+        "my_cnty": "SC,Greenwood",
+        "my_gridsquare": "EM94",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-3878",
+        "my_sig_info": "US-3878"
+    },
+    "20": {
+        "my_city": "Brunswick",
+        "my_state": "GA",
+        "my_cnty": "GA,Glynn",
+        "my_gridsquare": "EM91",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-9770",
+        "my_sig_info": "US-9770"
+    },
+    "21": {
+        "my_city": "Bay Springs",
+        "my_state": "SC",
+        "my_cnty": "SC,Chesterfield",
+        "my_gridsquare": "EM94",
+        "my_cq_zone": "8",
+        "my_itu_zone": "5",
+        "my_country": "United States of America",
+        "my_pota_ref": "US-9770",
+        "my_sig_info": "US-9770"
+    }
+}
